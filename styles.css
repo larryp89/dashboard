@@ -1,0 +1,54 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+  grid-template-areas:
+    "sd hd hd"
+    "sd pro ann"
+    "sd pro tdg";
+}
+.header {
+  grid-area: hd;
+  background-color: green;
+}
+
+.sidebar {
+  grid-area: sd;
+  background-color: #009dff;
+  display: grid;
+}
+
+.projects {
+  grid-area: pro;
+  background-color: lightblue;
+}
+
+.annoucements {
+  grid-area: ann;
+  background-color: aquamarine;
+}
+
+.trending {
+  grid-area: tdg;
+  background-color: aqua;
+}
+
+button {
+  border-radius: 15px;
+  margin: 2px 2px;
+  background-color: #009dff;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+}
+
+.av-small {
+  height: 40px;
+}
+
+.icon-small {
+  height: 30px;
+}
+
+.av-large{
+height: 50px;
+}
